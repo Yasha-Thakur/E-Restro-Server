@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/home', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "quizzical-volhard-2b64ba.netlify.app")
     res.send(data)
 })
 
